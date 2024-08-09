@@ -1,0 +1,10 @@
+.square-item{
+    width: 90px;
+    height: 90px;
+    background: #2f4553;
+}
+
+.square-item:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}

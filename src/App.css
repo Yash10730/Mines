@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+body {
+  font-family: "Play", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #1a2c38;
+}
+
+.setup-form {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #213743;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0f212e;
+}
+
+.setup-form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.setup-form div {
+  margin-bottom: 15px;
+}
+
+.setup-form label {
+  display: block;
+  font-size: 16px;
+  color: #b1bad3;
+  margin-bottom: 5px;
+}
+
+.setup-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.setup-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.demobtn2 {
+  font-size: 16px;
+  line-height: 16px;
+  color: white;
+  background-color: #1fff20;
+  font-weight: bold;
+}
+
+.exitbtn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1fff20;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exitbtn:hover {
+  background-color: #1fff20;
+}
+
+
+
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 90px);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gap-10 {
+  gap: 20px;
+}
+
+.totalScore {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.totalScore p {
+  margin: 0;
+}
+
+.dembtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .d-grid {
+    grid-template-columns: repeat(5, 50px);
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+
+  .totalScore {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .setup-form {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .setup-form h2 {
+    font-size: 20px;
+  }
+
+  .setup-form button,
+  .exitbtn,
+  .dembtn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .d-grid {
+    grid-template-columns: repeat(5, 40px);
+    row-gap: 3px;
+    column-gap: 3px;
+  }
+
+  .totalScore {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .setup-form {
+    padding: 15px;
+  }
+
+  .setup-form h2 {
+    font-size: 18px;
+  }
+
+  .setup-form button,
+  .exitbtn,
+  .dembtn {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+

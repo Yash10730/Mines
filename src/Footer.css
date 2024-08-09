@@ -1,0 +1,74 @@
+/* Footer.css */
+.mdb-footer {
+    background-color: #f1f1f1; /* Light gray background */
+    color: #343a40; /* Dark text color */
+  }
+  
+  .mdb-footer .text-center {
+    text-align: center;
+  }
+  
+  .mdb-footer .text-dark {
+    color: #343a40; /* Dark color for text and links */
+  }
+  
+  .mdb-footer .text-dark a {
+    color: #343a40;
+    text-decoration: none;
+  }
+  
+  .mdb-footer .text-dark a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+  }
+  
+  .mdb-footer .btn-link {
+    color: #343a40; /* Dark color for button links */
+  }
+  
+  .mdb-footer .btn-link:hover {
+    color: #0056b3; /* Change color on hover for better UX */
+  }
+  
+  .mdb-footer .btn {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    border: none; /* Remove border to prevent layout shift */
+    background: transparent; /* Ensure background is transparent */
+  }
+  
+  .mdb-footer .icon-container {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center the icons */
+    gap: 10px; /* 10px gap between icons */
+    flex-wrap: wrap; /* Wrap to the next line if needed */
+    align-items: center; /* Align items to the center */
+  }
+  
+  .mdb-footer .btn-lg {
+    font-size: 1.5rem; /* Adjust icon size */
+    line-height: 1.5;
+    transition: none; /* Disable transition for no effects */
+  }
+  
+  .mdb-footer .p-3 {
+    padding: 1rem;
+  }
+  
+  .mdb-footer .text-center.p-3 {
+    background-color: rgba(0, 0, 0, 0.2); /* Light background for footer bottom */
+  }
+  
+  .mdb-footer .btn i {
+    font-size: 1.5rem; /* Icon size */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mdb-footer .btn-lg {
+      font-size: 1.25rem; /* Slightly smaller icons on smaller screens */
+    }
+  }
+  
+  .new1 a{
+    color:blue !important;
+  }
