@@ -138,8 +138,8 @@ function App() {
                 <button className="exitbtn" onClick={exitGame}>
                   Cash out
                 </button>
-                
-                
+
+
               )}
                 <pre></pre>
             </div>
