@@ -1,13 +1,37 @@
-.square-item {
+.square {
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.square-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Square.css */
+.square-item{
   width: 90px;
   height: 90px;
   background: #2f4553;
 }
 
-.square-item:hover {
+.square-item:hover{
   transform: translateY(-5px);
   cursor: pointer;
 }
+
 
 /* Media queries to make square items smaller for smaller viewports */
 @media (max-width: 768px) {
@@ -32,10 +56,10 @@
 }
 
 /* To shift the grid to the extreme left margin if required */
-.d-grid {
+ .d-grid {
   margin-left: 0;
   padding-left: 0;
-}
+} 
 
 @media (max-width: 768px) {
   .d-grid {

@@ -80,12 +80,13 @@ body {
   background-color: #1fff20;
 }
 
+
+
 .d-grid {
   display: grid;
   grid-template-columns: repeat(5, 90px);
   row-gap: 10px;
   column-gap: 10px;
-  margin-left: 0; /* Align grid to the left */
 }
 
 .d-flex {
@@ -120,6 +121,8 @@ body {
   transition: background-color 0.3s ease;
 }
 
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -129,10 +132,9 @@ body {
 
 @media (max-width: 768px) {
   .d-grid {
-    grid-template-columns: repeat(5, 70px); /* Decrease square size */
-    row-gap: 8px;
-    column-gap: 8px;
-    margin-left: 0; /* Align grid to the left */
+    grid-template-columns: repeat(5, 50px);
+    row-gap: 5px;
+    column-gap: 5px;
   }
 
   .totalScore {
@@ -159,10 +161,9 @@ body {
 
 @media (max-width: 480px) {
   .d-grid {
-    grid-template-columns: repeat(5, 50px); /* Further decrease square size */
-    row-gap: 6px;
-    column-gap: 6px;
-    margin-left: 0; /* Align grid to the left */
+    grid-template-columns: repeat(5, 40px);
+    row-gap: 3px;
+    column-gap: 3px;
   }
 
   .totalScore {
@@ -186,233 +187,7 @@ body {
   }
 }
 
-/* Square.css */
-.square {
-  width: 100%;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
-  position: relative;
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
-.square-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  color: #333;
-}
-
-@media (max-width: 768px) {
-  .square-content {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .square-content {
-    font-size: 16px;
-  }
-}
-
-/* Footer styles remain unchanged */
-.mdb-footer {
-  background-color: #f1f1f1; /* Light gray background */
-  color: #343a40; /* Dark text color */
-}
-
-/* ...other footer styles */
-
-
-.mdb-footer {
-  background-color: #f1f1f1; /* Light gray background */
-  color: #343a40; /* Dark text color */
-}
-
-.mdb-footer .text-center {
-  text-align: center;
-}
-
-.mdb-footer .text-dark {
-  color: #343a40; /* Dark color for text and links */
-}
-
-.mdb-footer .text-dark a {
-  color: #343a40;
-  text-decoration: none;
-}
-
-.mdb-footer .text-dark a:hover {
-  text-decoration: underline; /* Underline on hover for better UX */
-}
-
-.mdb-footer .btn-link {
-  color: #343a40; /* Dark color for button links */
-}
-
-.mdb-footer .btn-link:hover {
-  color: #0056b3; /* Change color on hover for better UX */
-}
-
-.mdb-footer .btn {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  border: none; /* Remove border to prevent layout shift */
-  background: transparent; /* Ensure background is transparent */
-}
-
-.mdb-footer .icon-container {
-  display: flex; /* Use Flexbox for layout */
-  justify-content: center; /* Center the icons */
-  gap: 10px; /* 10px gap between icons */
-  flex-wrap: wrap; /* Wrap to the next line if needed */
-  align-items: center; /* Align items to the center */
-}
-
-.mdb-footer .btn-lg {
-  font-size: 1.5rem; /* Adjust icon size */
-  line-height: 1.5;
-  transition: none; /* Disable transition for no effects */
-}
-
-.mdb-footer .p-3 {
-  padding: 1rem;
-}
-
-.mdb-footer .text-center.p-3 {
-  background-color: rgba(0, 0, 0, 0.2); /* Light background for footer bottom */
-}
-
-.mdb-footer .btn i {
-  font-size: 1.5rem; /* Icon size */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .mdb-footer .btn-lg {
-    font-size: 1.25rem; /* Slightly smaller icons on smaller screens */
-  }
-}
-
-.new1 a {
-  color: blue !important;
-}
-
-/* ... existing CSS code ... */
-
-/* Add more media queries for different devices */
-
-/* iPhone 6/7/8 */
-@media only screen and (max-width: 375px) {
-  .d-grid {
-    grid-template-columns: repeat(5, 60px);
-    row-gap: 8px;
-    column-gap: 8px;
-  }
-  .totalScore {
-    font-size: 18px;
-    margin-top: 15px;
-  }
-  .setup-form {
-    width: 95%;
-    margin: 15px auto;
-  }
-  .setup-form h2 {
-    font-size: 18px;
-  }
-  .setup-form button,
-  .exitbtn,
-  .dembtn {
-    font-size: 12px;
-    padding: 6px;
-  }
-}
-
-/* iPhone X and newer */
-@media only screen and (max-width: 414px) {
-  .d-grid {
-    grid-template-columns: repeat(5, 70px);
-    row-gap: 10px;
-    column-gap: 10px;
-  }
-  .totalScore {
-    font-size: 20px;
-    margin-top: 20px;
-  }
-  .setup-form {
-    width: 95%;
-    margin: 20px auto;
-  }
-  .setup-form h2 {
-    font-size: 20px;
-  }
-  .setup-form button,
-  .exitbtn,
-  .dembtn {
-    font-size: 14px;
-    padding: 8px;
-  }
-}
-
-/* Realme phones */
-@media only screen and (max-width: 412px) {
-  .d-grid {
-    grid-template-columns: repeat(5, 65px);
-    row-gap: 9px;
-    column-gap: 9px;
-  }
-  .totalScore {
-    font-size: 19px;
-    margin-top: 18px;
-  }
-  .setup-form {
-    width: 95%;
-    margin: 18px auto;
-  }
-  .setup-form h2 {
-    font-size: 19px;
-  }
-  .setup-form button,
-  .exitbtn,
-  .dembtn {
-    font-size: 13px;
-    padding: 7px;
-  }
-}
-
-/* Pixel phones */
-@media only screen and (max-width: 393px) {
-  .d-grid {
-    grid-template-columns: repeat(5, 58px);
-    row-gap: 7px;
-    column-gap: 7px;
-  }
-  .totalScore {
-    font-size: 17px;
-    margin-top: 13px;
-  }
-  .setup-form {
-    width: 95%;
-    margin: 13px auto;
-  }
-  .setup-form h2 {
-    font-size: 17px;
-  }
-  .setup-form button,
-  .exitbtn,
-  .dembtn {
-    font-size: 11px;
-    padding: 5px;
-  }
-}
-
-/* Other devices */
 @media only screen and (max-width: 320px) {
   .d-grid {
     grid-template-columns: repeat(5, 50px);
