@@ -1,45 +1,59 @@
-.square-item{
-    width: 90px;
-    height: 90px;
-    background: #2f4553;
+.square-item {
+  width: 90px;
+  height: 90px;
+  background: #2f4553;
 }
 
-.square-item:hover{
-    transform: translateY(-5px);
-    cursor: pointer;
+.square-item:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
 }
-/* Square.css */
-.square {
-    width: 100%;
-    padding-top: 100%; /* 1:1 Aspect Ratio */
-    position: relative;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+/* Media queries to make square items smaller for smaller viewports */
+@media (max-width: 768px) {
+  .square-item {
+    width: 70px;
+    height: 70px;
   }
-  
-  .square-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: #333;
+}
+
+@media (max-width: 480px) {
+  .square-item {
+    width: 50px;
+    height: 50px;
   }
-  
-  @media (max-width: 768px) {
-    .square-content {
-      font-size: 20px;
-    }
+}
+
+@media (max-width: 320px) {
+  .square-item {
+    width: 40px;
+    height: 40px;
   }
-  
-  @media (max-width: 480px) {
-    .square-content {
-      font-size: 16px;
-    }
+}
+
+/* To shift the grid to the extreme left margin if required */
+.d-grid {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .d-grid {
+    margin-left: -10px;
+    padding-left: 10px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .d-grid {
+    margin-left: -15px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .d-grid {
+    margin-left: -20px;
+    padding-left: 20px;
+  }
+}

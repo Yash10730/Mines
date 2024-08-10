@@ -85,6 +85,7 @@ body {
   grid-template-columns: repeat(5, 90px);
   row-gap: 10px;
   column-gap: 10px;
+  margin-left: 0; /* Align grid to the left */
 }
 
 .d-flex {
@@ -128,9 +129,10 @@ body {
 
 @media (max-width: 768px) {
   .d-grid {
-    grid-template-columns: repeat(5, 80px);
-    row-gap: 10px;
-    column-gap: 10px;
+    grid-template-columns: repeat(5, 70px); /* Decrease square size */
+    row-gap: 8px;
+    column-gap: 8px;
+    margin-left: 0; /* Align grid to the left */
   }
 
   .totalScore {
@@ -157,9 +159,10 @@ body {
 
 @media (max-width: 480px) {
   .d-grid {
-    grid-template-columns: repeat(5, 60px);
-    row-gap: 10px;
-    column-gap: 10px;
+    grid-template-columns: repeat(5, 50px); /* Further decrease square size */
+    row-gap: 6px;
+    column-gap: 6px;
+    margin-left: 0; /* Align grid to the left */
   }
 
   .totalScore {
@@ -183,16 +186,49 @@ body {
   }
 }
 
-.square-item {
-  width: 90px;
-  height: 90px;
-  background: #2f4553;
+/* Square.css */
+.square {
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.square-item:hover {
-  transform: translateY(-5px);
-  cursor: pointer;
+.square-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #333;
 }
+
+@media (max-width: 768px) {
+  .square-content {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .square-content {
+    font-size: 16px;
+  }
+}
+
+/* Footer styles remain unchanged */
+.mdb-footer {
+  background-color: #f1f1f1; /* Light gray background */
+  color: #343a40; /* Dark text color */
+}
+
+/* ...other footer styles */
+
 
 .mdb-footer {
   background-color: #f1f1f1; /* Light gray background */
@@ -266,4 +302,138 @@ body {
 
 .new1 a {
   color: blue !important;
+}
+
+/* ... existing CSS code ... */
+
+/* Add more media queries for different devices */
+
+/* iPhone 6/7/8 */
+@media only screen and (max-width: 375px) {
+  .d-grid {
+    grid-template-columns: repeat(5, 60px);
+    row-gap: 8px;
+    column-gap: 8px;
+  }
+  .totalScore {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .setup-form {
+    width: 95%;
+    margin: 15px auto;
+  }
+  .setup-form h2 {
+    font-size: 18px;
+  }
+  .setup-form button,
+  .exitbtn,
+  .dembtn {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+/* iPhone X and newer */
+@media only screen and (max-width: 414px) {
+  .d-grid {
+    grid-template-columns: repeat(5, 70px);
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  .totalScore {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .setup-form {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .setup-form h2 {
+    font-size: 20px;
+  }
+  .setup-form button,
+  .exitbtn,
+  .dembtn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Realme phones */
+@media only screen and (max-width: 412px) {
+  .d-grid {
+    grid-template-columns: repeat(5, 65px);
+    row-gap: 9px;
+    column-gap: 9px;
+  }
+  .totalScore {
+    font-size: 19px;
+    margin-top: 18px;
+  }
+  .setup-form {
+    width: 95%;
+    margin: 18px auto;
+  }
+  .setup-form h2 {
+    font-size: 19px;
+  }
+  .setup-form button,
+  .exitbtn,
+  .dembtn {
+    font-size: 13px;
+    padding: 7px;
+  }
+}
+
+/* Pixel phones */
+@media only screen and (max-width: 393px) {
+  .d-grid {
+    grid-template-columns: repeat(5, 58px);
+    row-gap: 7px;
+    column-gap: 7px;
+  }
+  .totalScore {
+    font-size: 17px;
+    margin-top: 13px;
+  }
+  .setup-form {
+    width: 95%;
+    margin: 13px auto;
+  }
+  .setup-form h2 {
+    font-size: 17px;
+  }
+  .setup-form button,
+  .exitbtn,
+  .dembtn {
+    font-size: 11px;
+    padding: 5px;
+  }
+}
+
+/* Other devices */
+@media only screen and (max-width: 320px) {
+  .d-grid {
+    grid-template-columns: repeat(5, 50px);
+    row-gap: 6px;
+    column-gap: 6px;
+  }
+  .totalScore {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .setup-form {
+    width: 95%;
+    margin: 10px auto;
+  }
+  .setup-form h2 {
+    font-size: 16px;
+  }
+  .setup-form button,
+  .exitbtn,
+  .dembtn {
+    font-size: 10px;
+    padding: 4px;
+  }
 }
